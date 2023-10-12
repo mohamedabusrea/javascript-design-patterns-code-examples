@@ -10,7 +10,7 @@ export default class DataContainer extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.github.com/search/users?q=microsoft+type:org")
+    fetch("https://api.github.com/search/users?q=apple+type:org")
       .then(res => res.json())
       .then(({items}) => this.setState({data: items}));
   }
